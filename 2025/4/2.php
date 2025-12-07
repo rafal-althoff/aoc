@@ -40,7 +40,6 @@ function drawMap(array $map): void
 }
 function removeRolls(array $map, array $coordinates): array
 {
-    var_dump($coordinates);
     foreach ($coordinates as $coordinate) {
         $map[$coordinate[0]][$coordinate[1]] = '.';
     }
